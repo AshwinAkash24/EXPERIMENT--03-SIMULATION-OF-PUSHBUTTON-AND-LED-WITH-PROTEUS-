@@ -93,6 +93,11 @@ void push_button()
 		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);  // Toggle LED
 		HAL_Delay(500);  // Delay to make it blink at 500ms intervals
 	}
+	else
+	{
+		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+		HAL_Delay(500);
+	}
 }
 
 int main(void)
@@ -167,16 +172,14 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output screen shots of proteus  :
-![Screenshot 2025-03-20 135011](https://github.com/user-attachments/assets/e96e39e0-660b-43bb-a9f3-679253a05292)
-
- ![Screenshot 2025-03-20 135001](https://github.com/user-attachments/assets/f48c1681-6170-40e6-801c-96a69a104f5a)
-
+![Screenshot 2025-03-20 135011](https://github.com/user-attachments/assets/8b0e9669-8396-4068-ba8f-f6a0a0b0ba68)
+![Screenshot 2025-03-20 135001](https://github.com/user-attachments/assets/fc0cfa93-a2a8-48c6-95f9-76fcb2c687f4)
 
 
 
 ## Proteus layout(Add pdf screen shot of circuit here)
- ![EX-02](https://github.com/user-attachments/assets/10dacb93-0a47-48e2-9e16-4dfa644f952e)
- 
+ ![EX-02](https://github.com/user-attachments/assets/c003e105-d6c5-4755-aecf-b29790da5308)
+
  
  
 ## Result :
